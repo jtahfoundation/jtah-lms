@@ -1,0 +1,72 @@
+.otpContainer{
+    display: flex;
+    gap: 12px;
+}
+.otpSlot{
+    width: 48px;
+    height: 54px;
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+.active{
+    border: 2px solid var(--purple);
+}
+.verifyButtonWrapper {
+    width: min(220px, 100%);
+    max-width: 220px;
+    min-width: 0;
+    margin: 0;
+}
+
+.verifyButton {
+    width: 100%;
+    min-height: 52px;
+    margin-top: 0;
+    font-size: 1rem;
+}
+.verify > a{
+    text-decoration: none;
+    color: var(--purple);
+    font-weight: 550;
+}
+.verify > p{
+    width: 330px;
+    font-size: 16px;
+    color: var(--muted);
+}
+.verify{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+}
+.verify > h1{
+    color: var(--deepPurple);
+    font-size: 26px;
+    font-weight: bold;
+}
+.logo{
+    margin: 30px;
+}
+@media (max-width: 400px) {
+    .otpSlot{
+        width: 36px;
+        height: 48px;
+    }
+    .verify > p{
+        width: 300px;
+    }
+    .logo{
+        width: 90px;
+        margin: 20px;
+    }
+}
