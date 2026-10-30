@@ -1,0 +1,100 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    min-height: 80px;
+    padding: 14px clamp(20px, 4.5vw, 60px);
+    border: 1px solid #E4DDF2;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: clamp(12px, 2vw, 30px);
+    min-width: 0;
+    color: var(--muted);
+    font-size: 0.9375rem;
+}
+
+.navContent > a {
+    text-decoration: none;
+    color: var(--muted);
+}
+
+.navContent > a:hover,
+.navContent > a:active,
+.navContent > a:focus-visible {
+    color: var(--purple);
+}
+
+.navContent > span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 8px;
+}
+
+.navLogo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.navButtonWrapper {
+    width: 110px;
+    min-height: 48px;
+    margin: 0;
+}
+
+.navButton {
+    min-height: 48px;
+    margin-top: 0;
+    font-size: 0.9375rem;
+}
+
+@media (max-width: 760px) {
+    .nav {
+        flex-wrap: wrap;
+        padding: 14px 24px;
+    }
+
+    .navContent {
+        flex: 1 1 100%;
+        justify-content: center;
+        gap: 16px 22px;
+    }
+
+    .navContent > span {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        justify-content: center;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .navContent {
+        width: 100%;
+        gap: 14px 18px;
+        font-size: 0.875rem;
+    }
+
+    .navContent > span {
+        flex-basis: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navButtonWrapper {
+        width: min(135px, calc(50% - 5px));
+    }
+}

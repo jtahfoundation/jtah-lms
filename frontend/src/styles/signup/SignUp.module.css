@@ -1,0 +1,12 @@
+.signUp {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+    .signUp {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

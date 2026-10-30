@@ -1,0 +1,85 @@
+.brandSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: clamp(28px, 5vw, 72px);
+    background: var(--deepPurple);
+    color: #fff;
+}
+
+.brandSideContents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 520px;
+}
+
+.registered {
+    display: inline-block;
+    max-width: 100%;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: #4A3590;
+    color: #E8DFFB;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.brandSideText {
+    width: 100%;
+    margin: 24px 0 0;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    overflow-wrap: anywhere;
+}
+
+.brandDescription {
+    width: 100%;
+    margin: 20px 0 0;
+    color: #CFC3EE;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.statCards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+    .brandSide {
+        padding: 48px clamp(20px, 6vw, 56px);
+    }
+
+    .brandSideContents {
+        max-width: 680px;
+    }
+
+    .brandSideText {
+        font-size: clamp(2rem, 5vw, 2.75rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .brandSide {
+        padding: 36px 20px;
+    }
+
+    .brandSideText {
+        font-size: 2rem;
+    }
+
+    .statCards {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+}
