@@ -1,5 +1,5 @@
-import Logo from "../signup/Logo.jsx";
-import Button from "../signup/Button.jsx";
+import Logo from "../common/Logo.jsx";
+import Button from "../common/Button.jsx";
 import styles from "../../styles/landingpage/Nav.module.css";
 
 export default function Nav() {

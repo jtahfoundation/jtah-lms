@@ -1,5 +1,5 @@
 import ProgrammeCard from "./ProgrammeCard.jsx";
-import Button from "../signup/Button.jsx";
+import Button from "../common/Button.jsx";
 import styles from "../../styles/landingpage/Programme.module.css";
 import computerSvg from "../../assets/icons/computer.svg";
 import scaleSvg from "../../assets/icons/scale.svg";

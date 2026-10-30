@@ -1,7 +1,7 @@
 import Input from "./Input.jsx";
-import Logo from "./Logo.jsx";
+import Logo from "../common/Logo.jsx";
 import styles from "../../styles/signup/FormField.module.css";
-import Button from "./Button.jsx";
+import Button from "../common/Button.jsx";
 
 export default function FormField() {
     return (
@@ -49,7 +49,7 @@ export default function FormField() {
             </form>
 
             <p className={styles.optional}>
-                Already have an account? <a href="#signin">Sign in</a>
+                Already have an account? <a href="#login">Sign in</a>
             </p>
         </section>
     );

@@ -1,5 +1,5 @@
 import styles from "../../styles/landingpage/ProgrammeCard.module.css";
-import SvgIcon from "./SvgIcon.jsx";
+import SvgIcon from "../common/SvgIcon.jsx";
 
 export default function ProgrammeCard({ iconLink, title, subtitle }) {
     return (

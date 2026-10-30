@@ -1,5 +1,5 @@
 import styles from "../../styles/landingpage/Hero.module.css";
-import Button from "../signup/Button.jsx";
+import Button from "../common/Button.jsx";
 import learners from "../../assets/landingpage/learners.jpg";
 
 export default function Hero() {
