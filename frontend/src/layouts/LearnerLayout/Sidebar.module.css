@@ -1,8 +1,45 @@
 .logo{
     width: 90px;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
-.buttonDisabled{
+.icon{
+    width: 18px;
+    height: 18px;
+}
+.barList{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.barListItemButton{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 10px;
+    width: 100%;
+    gap: 12px;
+    color: var(--grey);
+    border-radius: 12px;
+}
 
+.barListItem{
+    display: flex;
+    align-items: center;
+}
+.active {
+    background-color: #F3EEFB;
+    color: var(--purple);
+}
+.sideBar{
+    width: 100%;
+    max-width: 260px;
+    height: 1000px;
+    padding: 15px;
+    border: 1px solid var(--line);
+    margin: 5px;
 }
 @media (min-width: 768px) {
     .logo{

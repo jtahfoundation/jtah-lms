@@ -20,28 +20,3 @@ export default function Icon({
         />
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// export default function Icon({ src, alt = "", size = "md", className = "" }) {
-//     const pixels = size === "lg" ? 100 : 48;
-//
-//     return (
-//         <img
-//             src={src}
-//             alt={alt}
-//             width={pixels}
-//             height={pixels}
-//             className={`${styles[size]} ${className}`}
-//         />
-//     );
-// }

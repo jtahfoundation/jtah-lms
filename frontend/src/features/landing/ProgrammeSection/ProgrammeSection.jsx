@@ -2,32 +2,34 @@ import ProgrammeCard from "../ProgrammeCard/ProgrammeCard.jsx";
 import styles from "./ProgrammeSection.module.css";
 import {Monitor, Scale, HeartPulse, UsersRound} from "lucide-react"
 // To add a programme, add one line here. The cards below are made from this list.
+const lightblack = "#C6C4C8FF";
+const warmgold = "#E8A93B"
 const programmes = [
     {
         id: "digital-skills",
         icon: Monitor,
-        color: "#C6C4C8FF",
+        color: lightblack,
         title: "Digital Skills",
         description: "Computer basics, email, safe internet use"
     },
     {
         id: "know-your-rights",
         icon: Scale,
-        color: "#E8A93B",
+        color: warmgold,
         title: "Know Your Rights",
         description: "Legal aid, GBV awareness, advocacy"
     },
     {
         id: "health",
         icon: HeartPulse,
-        color: "#C6C4C8FF",
+        color: lightblack,
         title: "Health and Wellbeing",
         description: "Menstrual health, mental health, nutrition"
     },
     {
         id: "leadership",
         icon: UsersRound,
-        color: "#E8A93B",
+        color: warmgold,
         title: "Leadership & Livelihood",
         description: "Confidence, small business, finance"
     }
