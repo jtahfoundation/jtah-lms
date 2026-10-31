@@ -1,0 +1,40 @@
+/*
+  Brand tokens, copied from the Figma "Design System" page.
+  Use var(--purple) instead of typing #5B3FA8 in a component file.
+  Change a colour here once and the whole app updates.
+
+  BREAKPOINTS (CSS variables don't work inside @media, so just stick to these):
+    480px  = large phone
+    768px  = tablet
+    1024px = desktop
+  Write the phone styles first, then add @media (min-width: ...) on top.
+*/
+:root {
+    /* Brand colours */
+    --purple: #5B3FA8;
+    --purple-hover: #49318D;
+    --deep-purple: #2E1F5E;
+    --lavender: #F3EEFB;
+    --line: #E4DDF2;
+    --ink: #1E1A2E;
+    --grey: #6B6880;
+    --gold: #E8A93B;
+    --green: #2E9E6B;
+    --rose: #D6578A;
+
+    /* Supporting shades used in the designs */
+    --brand-tint: #4A3590;     /* cards sitting on the deep purple background */
+    --on-dark: #E8DFFB;        /* text on deep purple */
+    --on-dark-muted: #CFC3EE;  /* softer text on deep purple */
+    --placeholder: #9691A7;
+    --surface-hover: #F9F7FC;
+
+    /* Shape */
+    --radius-sm: 10px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+
+    /* Side padding that grows a little with the screen */
+    --page-gutter: clamp(20px, 4.5vw, 60px);
+}

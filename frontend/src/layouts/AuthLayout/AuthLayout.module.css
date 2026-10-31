@@ -1,0 +1,38 @@
+/* Phones first: one column, form at the top */
+.auth {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 100vh;
+    min-height: 100dvh; /* dvh = the visible height, so mobile address bars don't cause a jump */
+}
+
+.formSide {
+    display: grid;
+    align-content: start;
+    justify-items: center;
+    padding: 28px 20px 40px;
+}
+
+.formInner {
+    width: 100%;
+    max-width: 480px;
+    min-width: 0;
+}
+
+@media (min-width: 768px) {
+    .formSide {
+        padding: 48px clamp(24px, 6vw, 72px);
+    }
+}
+
+/* Desktop: form on the left, brand panel on the right */
+@media (min-width: 1024px) {
+    .auth {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .formSide {
+        align-content: center;
+        padding: clamp(28px, 5vw, 64px) clamp(20px, 5vw, 72px);
+    }
+}

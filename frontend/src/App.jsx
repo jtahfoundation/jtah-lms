@@ -1,15 +1,21 @@
-import SignUp from "./pages/public/SignUp.jsx";
-import LandingPage from "./pages/public/LandingPage.jsx";
-import Login from "./pages/public/Login.jsx";
-import VerifyEmail from "./pages/public/VerifyEmail.jsx";
+import { Navigate, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage.jsx";
+import SignupPage from "./pages/SignupPage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
+import VerifyEmailPage from "./pages/VerifyEmailPage.jsx";
+import DashboardPage from "./pages/DashboardPage.jsx";
+
+// App.jsx only decides "which URL shows which page".
 export default function App() {
     return (
-        <>
-            {/*<Login/>*/}
-            {/*<LandingPage/>*/}
-            {/*<SignUp/>*/}
-            <VerifyEmail/>
-        </>
-
+        <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/verify-email" element={<VerifyEmailPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
+            {/* Any unknown URL goes back to the landing page */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
     );
 }

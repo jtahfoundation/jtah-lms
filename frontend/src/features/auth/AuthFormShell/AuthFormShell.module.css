@@ -1,0 +1,51 @@
+.shell {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.title {
+    margin-top: 24px;
+    color: var(--deep-purple);
+    font-size: clamp(1.75rem, 3vw, 2.125rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.subtitle {
+    max-width: 480px;
+    margin: 12px 0 24px;
+    color: var(--grey);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.divider {
+    margin: 18px 0;
+    color: var(--grey);
+    font-size: 0.8125rem;
+    text-align: center;
+}
+
+/* The gap spaces every field; the submit button (always last) gets a little extra */
+.form {
+    display: grid;
+    gap: 18px;
+}
+
+.form > :last-child {
+    margin-top: 6px;
+}
+
+.footer {
+    margin-top: 18px;
+    color: var(--grey);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--purple);
+    font-weight: 600;
+    text-decoration: none;
+}

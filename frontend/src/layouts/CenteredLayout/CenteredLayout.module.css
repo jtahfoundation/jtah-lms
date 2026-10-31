@@ -1,0 +1,15 @@
+.page {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.header {
+    padding: 24px var(--page-gutter);
+}
+
+.content {
+    width: 100%;
+    max-width: 420px;
+    margin: 16px auto 0;
+    padding: 0 20px 40px;
+}

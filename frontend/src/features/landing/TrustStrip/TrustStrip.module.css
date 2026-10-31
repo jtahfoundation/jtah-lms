@@ -1,0 +1,44 @@
+/* 1 column on phones, 2 on tablets, 4 on desktop */
+.strip {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    padding: 28px 24px;
+    border-radius: 24px;
+    background: var(--deep-purple);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.value {
+    color: var(--gold);
+    font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.label {
+    color: var(--on-dark);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+        padding: 36px clamp(24px, 3.5vw, 40px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .strip {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

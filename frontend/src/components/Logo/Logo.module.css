@@ -1,0 +1,16 @@
+.link {
+    display: inline-block;
+}
+
+.sm,
+.md {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .md {
+        width: 150px;
+    }
+}
