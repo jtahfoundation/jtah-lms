@@ -1,0 +1,11 @@
+.logo{
+    width: 90px;
+}
+.buttonDisabled{
+
+}
+@media (min-width: 768px) {
+    .logo{
+        width: 100px;
+    }
+}

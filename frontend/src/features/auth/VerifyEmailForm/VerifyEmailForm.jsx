@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { OTPInput } from "input-otp";
 import Icon from "../../../components/Icon/Icon.jsx";
 import Button from "../../../components/Button/Button.jsx";
-import mailIcon from "../../../assets/icons/mail.svg";
+import {Mail} from "lucide-react";
 import styles from "./VerifyEmailForm.module.css";
 
 const CODE_LENGTH = 6;
@@ -19,7 +19,11 @@ export default function VerifyEmailForm() {
 
     return (
         <section className={styles.verify}>
-            <Icon src={mailIcon} size="lg" />
+            <Icon
+                src={Mail}
+                size="lg"
+                color={"#5B3FA8"}
+            />
             <h1 className={styles.title}>Verify your email</h1>
             <p className={styles.text}>
                 We sent a 6-digit code to your email. Enter it below to activate your account.
